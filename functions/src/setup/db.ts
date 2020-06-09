@@ -2,7 +2,7 @@ const Sequelize = require('sequelize');
 
 import dbCredentials from '../../../env';
 
-export const db = new Sequelize(dbCredentials.name, dbCredentials.user, dbCredentials.password, {
+export const db = new Sequelize(dbCredentials.name, dbCredentials.username, dbCredentials.password, {
   host: dbCredentials.host,
   dialect: 'mysql',
   freezeTableName: true,
